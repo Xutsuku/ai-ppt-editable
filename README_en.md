@@ -4,11 +4,13 @@ English | [中文](README.md)
 
 > **Generate editable PowerPoint with AI.** Native shapes, text, and layouts — not flat images. Built for professional work reporting.
 
-Unlike tools that paste AI-generated images into slides, this project produces diagrams that import into PowerPoint as **fully editable native shapes** — move, recolor, resize every element after import. Designed with Morandi color aesthetics for McKinsey/consulting-grade professional slides.
+Unlike pasting AI-generated images directly into slides (flat pictures, not editable in PPT), this project produces diagrams that import into PowerPoint as **fully editable native shapes** — move, recolor, resize every element after import. Designed with Morandi color aesthetics for McKinsey/consulting-grade professional slides.
 
 ![Hero Example — 4-Stage Supply Chain Pipeline](examples/hero-supply-chain.png)
 
-> **Under the hood:** AI generates SVG following PPT-safe rules, then PowerPoint's *Convert to Shape* turns every element into a native object.
+> **How it works:** During your conversation with an LLM, hand it this project's skill as context → LLM generates an SVG file → insert into PowerPoint → right-click *Convert to Shape* → keep editing in PPT.
+
+> 📄 **Full walkthrough & demo:** [USE LLM To Generate PPT Slides (PDF)](docs/USE_LLM_To_Generate_PPT_Slides.pdf)
 
 ## Features
 
@@ -29,6 +31,12 @@ Four steps from prompt to a fully editable slide:
 3. **Convert to Shape** — right-click the image and select *Convert to Shape*
 4. **Edit freely** — every box, arrow, and text label is now a native PPT object
 
+## Iterate with Screenshots
+
+With multimodal LLMs (Gemini 3, Claude, etc.) you can **paste a screenshot** to drive edits — *"the arrow is too big"*, *"redraw this as an upward trend curve based on the table data"* — and the LLM returns the revised SVG:
+
+![Multimodal iteration — paste screenshot, LLM revises the SVG](examples/iterate-with-screenshot.png)
+
 ## Examples
 
 **Morandi-styled multi-stage diagram:**
@@ -37,7 +45,7 @@ Four steps from prompt to a fully editable slide:
 
 **More work-report use cases** — flowcharts, data metrics, architectures, timelines:
 
-![Gallery of work-report diagrams](examples/work-report-gallery.png)
+![Production-grade gallery: pipeline, benchmark, performance analysis](examples/production-gallery.png)
 
 ## Advanced: Generate a Full Deck
 
@@ -100,8 +108,6 @@ ai-ppt-editable/
 - [ ] Work reporting scenario templates (weekly/monthly/quarterly)
 
 ## Use Cases
-
-> 📄 For a detailed walkthrough, see [USE LLM To Generate PPT Slides (PDF)](docs/USE_LLM_To_Generate_PPT_Slides.pdf)
 
 - **Work Reporting** — Weekly updates, project status, KPI dashboards
 - **Technical Architecture** — System diagrams, data flow, infrastructure

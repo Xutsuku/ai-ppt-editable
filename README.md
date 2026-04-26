@@ -4,11 +4,13 @@
 
 > **用 AI 生成可继续编辑的 PowerPoint。** 原生形状、文字、布局 —— 不是死图。专为职场汇报打造。
 
-区别于把 AI 生成的图片直接贴进 PPT，这个项目产出的图表导入 PowerPoint 后，**每一个元素都是可编辑的原生形状** —— 移动、改色、缩放都不受限。采用莫兰迪配色，打造麦肯锡/咨询级专业幻灯片。
+区别于直接把 AI 生成的图片贴进 PPT（死图，无法在 PPT 里继续编辑），本项目产出的图表导入 PowerPoint 后，**每一个元素都是可编辑的原生形状** —— 移动、改色、缩放都不受限。采用莫兰迪配色，打造麦肯锡/咨询级专业幻灯片。
 
 ![成品示例 — 供应链Logistics 4 阶段流程图](examples/hero-supply-chain.png)
 
-> **技术原理：** AI 按 PPT 安全规则生成 SVG，再用 PowerPoint 的 *转换为形状* 将每个元素转成原生对象。
+> **技术原理：** 在与 LLM 的对话中，把本项目的 skill 作为上下文提供给 LLM，LLM 生成 SVG 文件 → 插入 PowerPoint → 右键「转换为形状」→ 后续在 PPT 中继续编辑。
+
+> 📄 **完整演示与详解**：[USE LLM To Generate PPT Slides (PDF)](docs/USE_LLM_To_Generate_PPT_Slides.pdf)
 
 ## 核心特性
 
@@ -29,6 +31,12 @@
 3. **转换为形状**：右键图片 → *转换为形状*
 4. **自由编辑**：每个框、箭头、文本都是原生 PPT 对象
 
+## 多模态迭代
+
+在多模态 LLM（Gemini 3、Claude 等）中，可以直接**粘贴截图**告诉 LLM 要改什么 —— 例如「这个箭头太大了」「按表格数据重画上升趋势图」，LLM 会直接返回修改后的 SVG：
+
+![多模态迭代 — 粘贴截图反馈，LLM 生成/修改 SVG](examples/iterate-with-screenshot.png)
+
 ## 示例
 
 **莫兰迪风格多阶段流程图：**
@@ -37,7 +45,7 @@
 
 **更多工作汇报场景** — 流程图、数据指标、架构图、时间线：
 
-![工作汇报图表合集](examples/work-report-gallery.png)
+![专业级成品合集：Pipeline、Benchmark、Performance 分析](examples/production-gallery.png)
 
 ## 进阶：生成整套汇报
 
@@ -100,8 +108,6 @@ ai-ppt-editable/
 - [ ] 工作汇报场景模板（周报/月报/季报）
 
 ## 使用场景
-
-> 📄 详细介绍请参阅 [USE LLM To Generate PPT Slides (PDF)](docs/USE_LLM_To_Generate_PPT_Slides.pdf)
 
 - **工作汇报** — 周报、项目状态、KPI 仪表板
 - **技术架构** — 系统图、数据流、基础设施
