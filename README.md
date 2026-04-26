@@ -6,7 +6,7 @@
 
 区别于直接把 AI 生成的图片贴进 PPT（死图，无法在 PPT 里继续编辑），本项目产出的图表导入 PowerPoint 后，**每一个元素都是可编辑的原生形状** —— 移动、改色、缩放都不受限。采用莫兰迪配色，打造麦肯锡/咨询级专业幻灯片。
 
-![成品示例 — 供应链Logistics 4 阶段流程图](examples/hero-supply-chain.png)
+![成品示例 — 供应链Logistics 4 阶段流程图](examples/hero-supply-chain_zh.png)
 
 > **技术原理：** 在与 LLM 的对话中，把本项目的 skill 作为上下文提供给 LLM，LLM 生成 SVG 文件 → 插入 PowerPoint → 右键「转换为形状」→ 后续在 PPT 中继续编辑。
 

@@ -6,7 +6,7 @@ English | [中文](README.md)
 
 Unlike pasting AI-generated images directly into slides (flat pictures, not editable in PPT), this project produces diagrams that import into PowerPoint as **fully editable native shapes** — move, recolor, resize every element after import. Designed with Morandi color aesthetics for McKinsey/consulting-grade professional slides.
 
-![Hero Example — 4-Stage Supply Chain Pipeline](examples/hero-supply-chain.png)
+![Hero Example — 4-Stage Supply Chain Pipeline](examples/hero-supply-chain_en.png)
 
 > **How it works:** During your conversation with an LLM, hand it this project's skill as context → LLM generates an SVG file → insert into PowerPoint → right-click *Convert to Shape* → keep editing in PPT.
 
