@@ -11,8 +11,6 @@ Unlike pasting AI-generated images directly into slides (flat pictures, not edit
 > **How it works:** During your conversation with an LLM, hand it this project's skill as context → LLM generates an SVG file → insert into PowerPoint → right-click *Convert to Shape* → keep editing in PPT.
 
 > 📄 **Full walkthrough & demo:** [USE LLM To Generate PPT Slides (PDF)](docs/USE_LLM_To_Generate_PPT_Slides.pdf)
->
-> ⚡ *Battle-tested since Aug 2025 — used in real work reports and well-received in internal sharings.*
 
 ## Features
 

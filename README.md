@@ -11,8 +11,6 @@
 > **技术原理：** 在与 LLM 的对话中，把本项目的 skill 作为上下文提供给 LLM，LLM 生成 SVG 文件 → 插入 PowerPoint → 右键「转换为形状」→ 后续在 PPT 中继续编辑。
 
 > 📄 **完整演示与详解**：[USE LLM To Generate PPT Slides (PDF)](docs/USE_LLM_To_Generate_PPT_Slides.pdf)
->
-> ⚡ *自 2025 年 8 月起持续使用，已应用于真实工作汇报，内部分享也获好评。*
 
 ## 核心特性
 
